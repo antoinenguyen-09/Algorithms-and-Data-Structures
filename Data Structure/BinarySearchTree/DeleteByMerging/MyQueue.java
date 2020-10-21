@@ -27,4 +27,5 @@ public class MyQueue {
         Node p = head.value;
         head = head.next;
         return p;
-  
+    }
+}
