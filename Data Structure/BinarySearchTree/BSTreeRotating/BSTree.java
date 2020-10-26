@@ -92,12 +92,12 @@ public class BSTree {
         my.insert(new Book("D", 16, 43));
         my.insert(new Book("E", 18, 24));
         my.insert(new Book("F", 19, 14));
-        my.insert(new Book("F", 1, 14));
-        my.insert(new Book("F", 2, 14));
-        my.insert(new Book("F", 3, 14));
-        my.insert(new Book("F", 4, 14));
-        my.insert(new Book("F", 5, 14));
-        my.insert(new Book("F", 6, 14));
+        my.insert(new Book("G", 1, 14));
+        my.insert(new Book("H", 2, 14));
+        my.insert(new Book("I", 3, 14));
+        my.insert(new Book("K", 4, 14));
+        my.insert(new Book("L", 5, 14));
+        my.insert(new Book("M", 6, 14));;
         
         my.breadthFirst();
         System.out.println();
