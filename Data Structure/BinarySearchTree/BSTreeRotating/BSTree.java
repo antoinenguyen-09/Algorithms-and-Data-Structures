@@ -80,6 +80,13 @@ public class BSTree {
         child.left = p;
         return child;
     }
+//    Node rightRotate(Node p){
+//        if(p==null||p.left==null) return p;
+//        Node child = p.left;
+//        p.left = child.right;
+//        child.right = p;
+//        return child;
+//    }
     
     public static void main(String args[]){
         BSTree my = new BSTree();
@@ -109,6 +116,7 @@ public class BSTree {
         System.out.println(father.right.value.toString());
         
         Node afterrotate = my.leftRotate(rotate);
+//        Node afterrotate = my.rightRotate(rotate);        
         if(father.value.page > rotate.value.page)
             father.left = afterrotate;
         else
