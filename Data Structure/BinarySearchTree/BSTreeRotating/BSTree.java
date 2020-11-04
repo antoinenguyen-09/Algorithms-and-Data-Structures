@@ -122,3 +122,5 @@ public class BSTree {
         System.out.println(father.right.value.toString());
         System.out.println("");
         my.breadthFirst();
+   }
+}
