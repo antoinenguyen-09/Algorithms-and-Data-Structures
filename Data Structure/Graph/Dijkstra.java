@@ -20,11 +20,6 @@ public class Dijkstra {
         } catch(Exception e){
             System.out.println("Co loi khi doc file"+e.getMessage());
         }
-        for(int i=0; i<size; i++){
-            for(int j=0; j<i; j++){
-                a[i][j] = a[j][i];
-            }
-        }
     }
     
     void dijkstra(int from, int to){
