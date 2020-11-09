@@ -53,11 +53,6 @@ public class BreadthFirstSearch {
         } catch(Exception e){
             System.out.println("Co loi khi doc file"+e.getMessage());
         }
-        for(int i=0; i<n; i++){
-            for(int j=0; j<i; j++){
-                a[i][j] = a[j][i];
-            }
-        }
     }
     void display(){
         for(int i=0; i<n; i++){
