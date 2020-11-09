@@ -18,7 +18,7 @@ public class Dijkstra {
                 j++;
             }
         } catch(Exception e){
-            System.out.println("Co loi khi doc file"+e.getMessage());
+            System.out.println("Co loi khi doc file: "+e.getMessage());
         }
     }
     
