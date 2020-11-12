@@ -1,10 +1,11 @@
 import java.io.RandomAccessFile;
 
-public class Dijkstra {
+public class Graph {
     int [][]a;
     int size=13;
+    String name="ABCDEFGHIJKLM";
     
-    public Dijkstra(){
+    public Graph(){
          a = new int[size][size];
          try{
             RandomAccessFile raf = new RandomAccessFile("input.txt", "r");
@@ -22,7 +23,7 @@ public class Dijkstra {
         }
     }
     
-    void dijkstra(int from, int to){
+    void Dijkstra(int from, int to){
         boolean []tobeVisited = new boolean[size];
         int []distance = new int[size]; //luu tru khoang cach ngan nhat
         int []point = new int[size]; //luu cac dinh lan luot di qua
@@ -57,6 +58,16 @@ public class Dijkstra {
             }
         }
         System.out.println("Khoang cach ngan nhat tu "+(char)(from+65)+" -> "+(char)(to+65)+": "+distance[to]);
+        Stack s = new Stack();
+        int i=to;
+        while(i!=from){
+            s.push(i);
+            if(i==from) break;
+            i = point[i];
+        }
+        System.out.print("Shortest path follow: "+name.charAt(from));
+        while(!s.isEmpty())
+            System.out.print(" ---> "+name.charAt(s.pop()));
     }
     
     void display(){
@@ -67,10 +78,10 @@ public class Dijkstra {
             System.out.println("");
         }
     }
-      
+    
     public static void main(String args[]){
-        Dijkstra djk = new Dijkstra();
-        djk.display();
-        djk.dijkstra((int)('H'-65), (int)('D'-65));
+        Graph gr = new Graph();
+        gr.display();
+        gr.Dijkstra((int)('H'-65), (int)('I'-65));
     }
 }
