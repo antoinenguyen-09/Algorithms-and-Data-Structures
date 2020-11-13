@@ -10,4 +10,4 @@ public class HanoiTower{
     public static void main(String[] args){
          HanoiTower ht = new HanoiTower();
          ht.move(3,'A','B','C');  //move n disk from rod A to rod B
-    
+    }
