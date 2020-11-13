@@ -11,3 +11,4 @@ public class HanoiTower{
          HanoiTower ht = new HanoiTower();
          ht.move(3,'A','B','C');  //move n disk from rod A to rod B
     }
+}
