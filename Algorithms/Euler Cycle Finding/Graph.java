@@ -190,7 +190,7 @@ while(S is not empty)
                 eu[m++] = r;  // eu[m] = r; m++; eu = {C,D,E,}
             } else { // if not, then i is an adjacent vertex to r
                 s.push(i);   // them i vao stack s 
-                display.enqueue(i); // them i vao queue display, neu lau cuoi thi dung stack
+                display.enqueue(i); // them i vao queue display, neu lay cuoi thi dung stack
                 a[r][i]--; // delete vertex displayed by i in the 2D array
                 a[i][r]--; // delete vertex displayed by i in the 2D array
             }
